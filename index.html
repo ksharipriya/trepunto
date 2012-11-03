@@ -17,20 +17,20 @@
 
 var paper = Raphael(document.getElementById("main"), 500, 300);
 var txt_3 = paper.print(10, 50, "TRE", paper.getFont("Bebas"), 110).attr({fill: "#d40000"});
-var txt_punto = paper.print(20, 140, "PUNTO", paper.getFont("Bebas"), 60).attr({fill: "#555"});
-var txt_punto_ombra = paper.print(20, 200, "PUNTO", paper.getFont("Bebas"), 60).attr({
+var txt_punto = paper.print(20, 142, "PUNTO", paper.getFont("Bebas"), 60).attr({fill: "#555"});
+var txt_punto_ombra = paper.print(20, 202, "PUNTO", paper.getFont("Bebas"), 60).attr({
 	fill: "90-#bbb-#fff",
 	transform: "s1-1",});
-var txt_slogan = paper.print(190, 130, "SVILUPPO E CONSULENZA\nTECNOLOGIE OPENSOURCE", paper.getFont("Bebas"), 20).attr({fill: "#aaa"});
-var txt_slogan_ombra = paper.print(190, 185, "SVILUPPO E CONSULENZA\nTECNOLOGIE OPENSOURCE", paper.getFont("Bebas"), 20).attr({
+var txt_slogan = paper.print(190, 132, "SVILUPPO E CONSULENZA\nTECNOLOGIE OPENSOURCE", paper.getFont("Bebas"), 20).attr({fill: "#aaa"});
+var txt_slogan_ombra = paper.print(190, 187, "SVILUPPO E CONSULENZA\nTECNOLOGIE OPENSOURCE", paper.getFont("Bebas"), 20).attr({
 	fill: "90-#ddd-#fff",
 	transform: "s1-1",});
 	
-var c = paper.rect(0, 0, 180, 120).attr({"fill": "#fff","opacity": 0});;
+var c = paper.rect(0, 0, 180, 122).attr({"fill": "#fff","opacity": 0});
 
 
 c.mouseover(function(){txt_3.animate({transform:"t0,-8"}, 200)});
-c.mouseout(function(){txt_3.animate({transform:"t0,8"}, 700, "bounce");mySound.play();});
+c.mouseout(function(){txt_3.animate({transform:"t0,8"}, 700, "bounce")});
 </script>
 
 </body>
