@@ -1,0 +1,12 @@
+
+ 
+body {
+  background: #fff;
+  color: #333;
+}    
+
+#main {
+width:500px;
+margin:10px auto;
+
+}
